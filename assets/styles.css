@@ -185,3 +185,68 @@ body{
   .topbar-inner{ flex-wrap: wrap; }
   .brand{ flex-basis: 100%; }
 }
+/* --- Publications (Shiny-like list) --- */
+.pub-list { margin-top: 6px; }
+
+.pub-item{
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.pub-item-last{ border-bottom: none; }
+
+.pub-year{
+  font-weight: 700;
+  color: rgba(0,0,0,.60);
+  padding-top: 2px;
+}
+
+.pub-title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.pub-outlet{
+  color: rgba(0,0,0,.65);
+  margin-top: 6px;
+}
+
+.pub-link a{
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* --- Work in progress (2-column cards) --- */
+.wip-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.wip-card{
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.03);
+}
+
+.wip-title{
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.wip-text{
+  color: rgba(0,0,0,.70);
+}
+
+@media (max-width: 900px){
+  .wip-grid{ grid-template-columns: 1fr; }
+}
