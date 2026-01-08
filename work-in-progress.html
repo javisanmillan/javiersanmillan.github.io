@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work in progress — Javier San Millán</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Work in progress — Javier San Millán" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Javier San Millán</div>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">About me</a>
+        <a class="nav-link" href="publications.html">Publications</a>
+        <a class="nav-link active" href="work-in-progress.html">Work in progress</a>
+        <a class="nav-link" href="cv.html">CV</a>
+      </nav>
+
+      <div class="topbar-right">
+        <a class="icon-btn" href="mailto:j.sanmillantejedor@tudelft.nl" title="Email" aria-label="Email">✉︎</a>
+        <a class="icon-btn" href="https://scholar.google.com/citations?user=briR6jMAAAAJ&hl=es" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar">🎓</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="card">
+        <img class="avatar" src="assets/profile.jpg" alt="Portrait photo" />
+        <h1 class="name">Javier San Millán</h1>
+        <p class="role">PhD candidate in Urban Studies</p>
+
+        <div class="meta">
+          <div class="meta-row">
+            <span class="meta-ico">📍</span>
+            <span>Delft, Netherlands</span>
+          </div>
+        </div>
+
+        <div class="links">
+          <a class="link" href="mailto:j.sanmillantejedor@tudelft.nl">Email</a>
+          <a class="link" href="https://scholar.google.com/citations?user=briR6jMAAAAJ&hl=es" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="link" href="https://bsky.app/profile/javiersanmillan.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <h2>Work in progress</h2>
+
+      <div class="wip-grid">
+        <div class="wip-card">
+          <div class="wip-title">When does (not) economic inequality translate into urban segregation? The mediating role of social housing in the Netherlands, 2011–2024</div>
+          <div class="wip-text">
+            This paper examines how the impact of social housing on residential segregation depends on its spatial distribution and on the social profile of its residents. Using geocoded administrative data from the Netherlands, we show that social housing can either mitigate or reinforce segregation depending on whether it is embedded in mixed urban environments or concentrated in already disadvantaged areas.
+          </div>
+        </div>
+
+        <div class="wip-card">
+          <div class="wip-title">Housing subsidies and neighbourhood choice</div>
+          <div class="wip-text">
+            This paper, in development with my SEGUE project colleagues, analyses how housing subsidies shape neighbourhood selection among low-income households. The results suggest that subsidy design and market constraints can channel recipients towards more disadvantaged neighbourhoods, with implications for the spatial reproduction of inequality.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">© <span id="year"></span> Javier San Millán</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
